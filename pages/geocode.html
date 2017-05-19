@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>geocode</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/main.css"　type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+</head>
+<body>
+    <header class="container">
+       <h1><a href="../index.html">Trynagetajob.com</a></h1>
+    </header> 
+    <header class="col sm-4">
+        <h1 style="padding-left:8px;">Geocode</h1>
+    </header>
+    <div class="address-add">
+        <p style="padding-left:10px;">This is an interface connecting the google geocoding API to its mapping API.</p>
+        <h3 style="padding-left:10px;">Enter an address</h3>
+        <input style="margin-left:10px;" type="text" name="adr" placeholder="address" id="address-id" />
+        <button id="add-address-button">Locate</button>
+    <script>
+        var addedaddress = document.querySelector('#add-address-button');
+        if(addedaddress){
+            addedaddress.addEventListener("click", function(){
+                var enteredaddress={
+                    "address": document.querySelector("#address-id").value
+                }
+                document.querySelector("#address-id").value="";
+            });
+             
+        }
+    </script>
+</body>
+</html>

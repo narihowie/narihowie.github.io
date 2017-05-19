@@ -1,0 +1,49 @@
+body{
+    background-color: ghostwhite;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+header.container{
+    width: 100%;
+    background-color: darkslateblue;
+    padding-bottom: 7px;
+}
+header.container a{
+    color: ghostwhite;
+    font-size:15px;
+}
+header a:hover{
+    color: ghostwhite;
+    text-decoration: none;
+}
+.jumbotron {
+    color: white;
+}
+.jumbotron h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px;
+    color: darkslateblue;
+}
+
+.project-list{
+    list-style: none;
+    font-size: 20px;
+}
+.project-list a{
+    color: darkslateblue;
+}
+
+.generate{
+     border-radius: 4px;
+     margin:4px;
+     border: 5px;
+     padding: 10px;
+     background-color: darkslateblue;
+     color: white;
+ }
+
+.generate:hover{
+     background-color: darkslateblue;
+     color: lightgrey;
+ }
